@@ -1,5 +1,4 @@
-import { mount } from "vue-test-utils";
-import { shallow } from "@vue/test-utils";
+import { mount, shallow } from "@vue/test-utils";
 import HelloWithProps from "../src/components/HelloWithProps";
 
 describe("HelloWithProps.spec.js", () => {
@@ -8,9 +7,9 @@ describe("HelloWithProps.spec.js", () => {
     beforeEach(() => {
         wrapper = mount(HelloWithProps, {
             propsData: {
-                message: "Hello World"
+              message: 'Hello World'
             }
-        });
+        })
     });
 
     it("renders without crashing", () => {
@@ -20,6 +19,6 @@ describe("HelloWithProps.spec.js", () => {
     });
 
     it("should display Hello World", () => {
-        expect(wrapper.vm.message).toEqual("Hello World");
+        expect(wrapper.props().message).toBe("Hello World");
     });
 });

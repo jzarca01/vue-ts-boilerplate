@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" hostname="localhost" tests="2" failures="0" time="1.495" timestamp="2018-02-01T15:46:45">
+  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" hostname="localhost" tests="2" failures="0" time="1.409" timestamp="2018-02-01T16:03:53">
     <properties>
     </properties>
     <testcase classname="Hello.spec.js" name="renders without crashing" time="0">
@@ -10,7 +10,7 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" hostname="localhost" tests="2" failures="0" time="0.286" timestamp="2018-02-01T15:46:47">
+  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" hostname="localhost" tests="2" failures="0" time="0.273" timestamp="2018-02-01T16:03:55">
     <properties>
     </properties>
     <testcase classname="HelloWithProps.spec.js" name="renders without crashing" time="0">

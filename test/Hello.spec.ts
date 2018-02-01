@@ -1,5 +1,4 @@
-import { mount } from "vue-test-utils";
-import { shallow } from "@vue/test-utils";
+import { mount, shallow } from "@vue/test-utils";
 import Hello from "../src/components/Hello";
 
 describe("Hello.spec.js", () => {
