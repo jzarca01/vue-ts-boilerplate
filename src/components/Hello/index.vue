@@ -4,20 +4,13 @@
     <h2>Essential Links</h2>
     <ul class="links">
       <li><a href="https://vuejs.org" target="_blank">Vue</a></li>
-      <li><a href="https://github.com/vuejs/vetur" target="_blank">Vetur</a></li>
       <li><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></li>
-      <li><a href="https://github.com/octref/veturpack" target="_blank">Veturpack</a></li>
+      <li><a href="https://github.com/jzarca01/vue-ts-boilerplate" target="_blank">Vue-TS Starter Boilerplate</a></li>
     </ul>
-    <h2>Things to Try</h2>
+    <h2>Things to Do</h2>
     <ul class="tips">
-      <li><button @click="hype()">H Y P E</button></li>
-      <li>Open <span class="code">Hello.vue</span> and hover on <span class="code">this.msg</span></li>
-      <li>Now hover on <span class="code">this</span></li>
-      <li>Start typing another <span class="code">this</span> with a dot</li>
-      <li>You have <span class="code">vue-router</span> as dependency right?</li>
-      <li>So don't miss <span class="code">this.$router</span> with a dot </li>
-      <li>Final Pro Tip: Put <span class="code">//@ts-check</span> on the top of your script block, and try stupid things like <span class="code">this.msg = 42</span></li>
-      <li>You own <a href="https://github.com/octref">@octref</a> a <button @click="tweet">tweet</button></li>
+      <li><button @click="hype()">Hype this</button></li>
+      <li><button @click="tweet">Tweet this</button></li>
     </ul>
   </div>
 </template>
@@ -31,10 +24,10 @@ import { Component } from 'vue-property-decorator';
 })
 
 export default class Hello extends Vue {
-  msg: string =  'Try Vue 2.5 new types in Vetur';
+  msg: string =  `Now that is a cool Vue.JS with Typescript 2.7 boilerplate `;
 
   encodedTweetUri(): string {
-    const hypedTweet = this.msg + ' https://github.com/octref/veturpack/tree/new-types'
+    const hypedTweet = this.msg + ' https://github.com/jzarca01/vue-ts-boilerplate'
     return encodeURI(`https://twitter.com/intent/tweet?text=${hypedTweet}`)
   }
 
