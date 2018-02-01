@@ -1,1 +1,1 @@
-# Vue.js + Typescript 2.7 + Vue-Router boilerplate
+# Vue.js with Typescript 2.7 + Vue-router + TSLint + Jest boilerplate
