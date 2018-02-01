@@ -1,20 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./build/",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    // alignement avec le support navigateur de Vue
-    "target": "es5",
-    // activation de la déduction stricte pour les propriétés de données sur `this`
-    "strict": true,
-    // si vous utilisez webpack 2+ ou rollup, permettre le tree shaking :
-    "lib": [
-        "es2016",
-        "dom"
-    ],
-    "moduleResolution": "node"
+      "target": "es5",
+      "strict": true,
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["dom", "es5", "es2015.promise", "es2017", "es6"],
+      "module": "es2015",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "noImplicitAny": false
   },
-  "include": [
-      "./src/**/*"
-  ]
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules"]
 }
