@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="45" lines-covered="39" line-rate="0.8667" branches-valid="72" branches-covered="28" branch-rate="0.3889" timestamp="1517501035560" complexity="0" version="0.1">
+<coverage lines-valid="60" lines-covered="39" line-rate="0.65" branches-valid="104" branches-covered="28" branch-rate="0.2692" timestamp="1517569188692" complexity="0" version="0.1">
   <sources>
-    <source>/Users/jeremiezarca/Desktop/Enablon/test2</source>
+    <source>/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate</source>
   </sources>
   <packages>
-    <package name="Hello" line-rate="0.8148000000000001" branch-rate="0.3889">
+    <package name="components.Hello" line-rate="0.8148000000000001" branch-rate="0.3889">
       <classes>
         <class name="index.vue" filename="src/components/Hello/index.vue" line-rate="0.8148000000000001" branch-rate="0.3889">
           <methods>
@@ -97,7 +97,7 @@
         </class>
       </classes>
     </package>
-    <package name="HelloWithProps" line-rate="0.9444" branch-rate="0.3889">
+    <package name="components.HelloWithProps" line-rate="0.9444" branch-rate="0.3889">
       <classes>
         <class name="index.vue" filename="src/components/HelloWithProps/index.vue" line-rate="0.9444" branch-rate="0.3889">
           <methods>
@@ -161,6 +161,105 @@
             <line number="22" hits="6" branch="true" condition-coverage="100% (3/3)"/>
             <line number="24" hits="1" branch="false"/>
             <line number="31" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="store.modules" line-rate="0" branch-rate="0">
+      <classes>
+        <class name="actions.js" filename="src/store/modules/actions.js" line-rate="0" branch-rate="0">
+          <methods>
+            <method name="(anonymous_0)" hits="0" signature="()V">
+              <lines>
+                <line number="1" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="1" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="true" condition-coverage="0% (0/4)"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="store.modules.HelloWithProps" line-rate="0" branch-rate="0">
+      <classes>
+        <class name="actions.js" filename="src/store/modules/HelloWithProps/actions.js" line-rate="0" branch-rate="0">
+          <methods>
+            <method name="_interopRequireWildcard" hits="0" signature="()V">
+              <lines>
+                <line number="1" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="true" condition-coverage="0% (0/8)"/>
+            <line number="2" hits="0" branch="false"/>
+            <line number="3" hits="0" branch="false"/>
+            <line number="4" hits="0" branch="false"/>
+          </lines>
+        </class>
+        <class name="getters.js" filename="src/store/modules/HelloWithProps/getters.js" line-rate="0" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="false"/>
+          </lines>
+        </class>
+        <class name="index.js" filename="src/store/modules/HelloWithProps/index.js" line-rate="0" branch-rate="0">
+          <methods>
+            <method name="_interopRequireDefault" hits="0" signature="()V">
+              <lines>
+                <line number="4" hits="0"/>
+              </lines>
+            </method>
+            <method name="_interopRequireWildcard" hits="0" signature="()V">
+              <lines>
+                <line number="4" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="false"/>
+            <line number="2" hits="0" branch="false"/>
+            <line number="3" hits="0" branch="false"/>
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/12)"/>
+          </lines>
+        </class>
+        <class name="mutation-types.js" filename="src/store/modules/HelloWithProps/mutation-types.js" line-rate="0" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="false"/>
+          </lines>
+        </class>
+        <class name="mutations.js" filename="src/store/modules/HelloWithProps/mutations.js" line-rate="0" branch-rate="0">
+          <methods>
+            <method name="_interopRequireWildcard" hits="0" signature="()V">
+              <lines>
+                <line number="1" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="0" branch="true" condition-coverage="0% (0/8)"/>
+            <line number="2" hits="0" branch="false"/>
+            <line number="4" hits="0" branch="false"/>
+            <line number="5" hits="0" branch="false"/>
           </lines>
         </class>
       </classes>

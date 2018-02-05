@@ -8,12 +8,8 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from "vue-property-decorator";
-import VueRouter from "vue-router";
-
-import router from "./router/";
 
 @Component({
-  router
 })
 
 export default class App extends Vue {

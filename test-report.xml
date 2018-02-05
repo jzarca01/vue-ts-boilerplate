@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/Hello.spec.ts" hostname="localhost" tests="2" failures="0" time="1.409" timestamp="2018-02-01T16:03:53">
-    <properties>
-    </properties>
-    <testcase classname="Hello.spec.js" name="renders without crashing" time="0">
-    </testcase>
-    <testcase classname="Hello.spec.js" name="should display the content of .hello h1 = Now that is a cool Vue.JS with Typescript 2.7 boilerplate" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test2/test/HelloWithProps.spec.ts" hostname="localhost" tests="2" failures="0" time="0.273" timestamp="2018-02-01T16:03:55">
+  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/HelloWithProps.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/HelloWithProps.spec.ts" hostname="localhost" tests="2" failures="0" time="2.154" timestamp="2018-02-02T10:59:44">
     <properties>
     </properties>
     <testcase classname="HelloWithProps.spec.js" name="renders without crashing" time="0">
     </testcase>
     <testcase classname="HelloWithProps.spec.js" name="should display Hello World" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" hostname="localhost" tests="2" failures="0" time="2.383" timestamp="2018-02-02T10:59:44">
+    <properties>
+    </properties>
+    <testcase classname="Hello.spec.js" name="renders without crashing" time="0">
+    </testcase>
+    <testcase classname="Hello.spec.js" name="should display the content of .hello h1 = Now that is a cool Vue.JS with Typescript 2.7 boilerplate" time="0">
     </testcase>
     <system-out/>
     <system-err/>

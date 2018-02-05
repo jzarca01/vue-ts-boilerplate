@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Hello/index.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">components/Hello</a> index.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">81.82% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>27/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.89% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/36</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.55% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">81.48% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>22/27</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;<span class="branch-1 cbranch-no" title="branch not covered" ></span>
+  &lt;div class="hello"&gt;
+    &lt;h1&gt;{<span class="branch-1 cbranch-no" title="branch not covered" >{ msg }}&lt;/h1&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-2 cbranch-no" title="branch not covered" ></span></span></span></span>
+    &lt;h2&gt;<span class="fstat-no" title="function not covered" ><span class="branch-3 cbranch-no" title="branch not covered" >Es</span>sential Links&lt;/h<span class="cstat-no" title="statement not covered" >2&gt;</span></span>
+    &lt;ul class="links"&gt;
+      &lt;li&gt;&lt;a href="https://vuejs.org" target="_blank"&gt;Vue&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://code.visualstudio.com/" target="_blank"&gt;VSCode&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://github.c<span class="branch-0 cbranch-no" title="branch not covered" >om/jzarca01/vue-t</span>s-boilerplate" target="_blank"&gt;Vue-TS Starter Boilerplate&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2&gt;Things to Do&lt;/h2&gt;
+    &lt;ul class="tips"&gt;<span class="branch-1 cbranch-no" title="branch not covered" ></span>
+      &lt;li&gt;&lt;button @click="hype()"&gt;Hype this&lt;/button<span class="branch-1 cbranch-no" title="branch not covered" >&gt;&lt;/li&gt;</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>  &lt;li&gt;&lt;button @click="tweet"&gt;Tweet this&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;<span class="branch-2 cbranch-no" title="branch not covered" ><span class="branch-1 cbranch-no" title="branch not covered" ></span></span>
+&lt;/template&gt;
+&nbsp;
+&lt;script lang="ts"&gt;
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+&nbsp;
+@Component({
+&nbsp;
+})
+&nbsp;
+export default class Hello extends Vue<span class="fstat-no" title="function not covered" > {</span>
+  msg: string =  `Now tha<span class="cstat-no" title="statement not covered" >t is a cool Vue.JS with Typescript 2.7 boilerplate `;</span>
+<span class="cstat-no" title="statement not covered" ></span>
+  encodedTweetUri(): string {
+    const hypedTweet = this<span class="fstat-no" title="function not covered" >.m</span>sg + ' https://github.com/jzarca01/vue-ts-boilerplate'
+    retu<span class="cstat-no" title="statement not covered" >rn encodeURI(`htt</span>ps://twitter.com/intent/tweet?text=${hypedTweet}`)
+  }
+<span class="fstat-no" title="function not covered" ></span>
+  hype (<span class="cstat-no" title="statement not covered" >) {</span>
+    this.msg += '!'
+  }
+&nbsp;
+  tweet () {
+    window.open(this.encodedTweetUri())
+  }
+}
+&nbsp;
+&lt;/script&gt;
+&nbsp;
+&lt;!-- Add "scoped" attribute to limit CSS to this component only --&gt;
+&lt;style scoped&gt;
+h1, h2 {
+  font-weight: normal;
+}
+&nbsp;
+ul { padding: 0; }
+li { list-style-type: none; }
+.code { color: #6f92ba; }
+&nbsp;
+ul.links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 16px;
+}
+ul.tips li {
+  margin-bottom: 10px;
+}
+&nbsp;
+a {
+  color: #42b983;
+}
+&nbsp;
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 02 2018 11:59:48 GMT+0100 (CET)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

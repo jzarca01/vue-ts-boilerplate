@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ state.message }}</h1>
     <h2>Essential Links</h2>
     <ul class="links">
       <li><a href="https://vuejs.org" target="_blank">Vue</a></li>
@@ -9,7 +9,7 @@
     </ul>
     <h2>Things to Do</h2>
     <ul class="tips">
-      <li><button @click="hype()">Hype this</button></li>
+      <li><button @click="checkVuex">Click here to check VueX</button></li>
       <li><button @click="tweet">Tweet this</button></li>
     </ul>
   </div>
@@ -17,25 +17,30 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import Component from 'vue-class-component';
+import * as hello from "../../store/Hello";
 
 @Component({
-
+  props: {
+      setMessage: Function,
+  },
 })
 
 export default class Hello extends Vue {
-  msg: string =  `Now that is a cool Vue.JS with Typescript 2.7 boilerplate `;
+  state: hello.HelloState = hello.readState(this.$store);
 
   encodedTweetUri(): string {
-    const hypedTweet = this.msg + ' https://github.com/jzarca01/vue-ts-boilerplate'
-    return encodeURI(`https://twitter.com/intent/tweet?text=${hypedTweet}`)
+    const hypedTweet: string = 'Now that is a cool Vue TypeScript ! https://github.com/jzarca01/vue-ts-boilerplate';
+    return encodeURI(`https://twitter.com/intent/tweet?text=${hypedTweet}`);
+  }
+  
+  checkVuex (): void {
+    hello.commitNewMessage(this.$store, {
+      message: "Committed text from Component",
+    });
   }
 
-  hype () {
-    this.msg += '!'
-  }
-
-  tweet () {
+  tweet (): void {
     window.open(this.encodedTweetUri())
   }
 }
