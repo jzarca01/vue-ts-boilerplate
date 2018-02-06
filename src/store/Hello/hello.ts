@@ -23,29 +23,20 @@ export const hello = {
     mutations: {
         setMessage(state: HelloState, payload: {message: string} ): HelloState {
             state.message = payload.message;
-
-            console.log(state);
             return state;
         },
 
         setItems(state: HelloState, payload: {items: Item[]} ): HelloState {
             state.items = payload.items;
-
-            console.log(state);
             return state;
         },
         deleteItem(state: HelloState, item: Item) {
-            console.log(item);
             state.items = state.items.filter(e => e != item);
-
-            console.log(state);
             return state;
         },
 
         toggleReadView(state: HelloState): HelloState {
             state.toggleRead = !state.toggleRead;
-
-            console.log(state);
             return state;
         }
     },

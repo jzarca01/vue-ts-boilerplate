@@ -25,16 +25,16 @@ describe("Hello.spec.js", () => {
         let catchFn = jest.fn(),
         thenFn = jest.fn();
 
-    // simulating a server response
-    mockAxios.mockResponse({ 
-        data: [{
-                userId: 1,
-                id: 1,
-                title: "Title1",
-                body: "Body1"
-            }] 
-        });
+        // simulating a server response
+        mockAxios.mockResponse({ 
+            data: [{
+                    userId: 1,
+                    id: 1,
+                    title: "Title1",
+                    body: "Body1"
+                }] 
+            });
 
-    expect(mockAxios.get).toHaveBeenCalledWith('http://jsonplaceholder.typicode.com/posts');
+        expect(mockAxios.get).toHaveBeenCalledWith('http://jsonplaceholder.typicode.com/posts');
     })
 });

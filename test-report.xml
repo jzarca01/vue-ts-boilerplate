@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" hostname="localhost" tests="2" failures="2" time="1.474" timestamp="2018-02-06T09:55:57">
+  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" hostname="localhost" tests="2" failures="2" time="2.145" timestamp="2018-02-06T10:36:17">
     <properties>
     </properties>
     <testcase classname="Hello.spec.js" name="renders without crashing" time="0">
@@ -61,9 +61,9 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
       </failure>
-      <failure message="TypeError: Cannot read property &apos;_init&apos; of undefined
-    at Hello (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:4726:12)
-    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:29:16)
+      <failure message="TypeError: Cannot read property &apos;resolve&apos; of undefined
+    at e.value (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-mock-axios/dist/webpack:/lib/mock-axios.ts:66:20)
+    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:29:28)
     at Object.asyncFn (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/jasmine_async.js:129:432)
     at resolve (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:51:12)
     at new Promise (&lt;anonymous&gt;)
@@ -72,6 +72,22 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
       </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/src/store/hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/src/store/hello.spec.ts" hostname="localhost" tests="5" failures="0" time="0.109" timestamp="2018-02-06T10:36:20">
+    <properties>
+    </properties>
+    <testcase classname="testing the getters" name="mutates state of the module and not state of other modules" time="0">
+    </testcase>
+    <testcase classname="testing the mutations" name="should have one item" time="0">
+    </testcase>
+    <testcase classname="testing the mutations" name="should mutate the message" time="0">
+    </testcase>
+    <testcase classname="testing the mutations" name="should mutate the toggleRead" time="0">
+    </testcase>
+    <testcase classname="testing the mutations" name="should remove the item" time="0">
     </testcase>
     <system-out/>
     <system-err/>

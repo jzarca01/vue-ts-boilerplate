@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="40" lines-covered="29" line-rate="0.725" branches-valid="40" branches-covered="17" branch-rate="0.425" timestamp="1517910960085" complexity="0" version="0.1">
+<coverage lines-valid="40" lines-covered="29" line-rate="0.725" branches-valid="40" branches-covered="17" branch-rate="0.425" timestamp="1517913381635" complexity="0" version="0.1">
   <sources>
     <source>/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate</source>
   </sources>
