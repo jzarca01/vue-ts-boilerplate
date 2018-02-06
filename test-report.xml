@@ -1,21 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/HelloWithProps.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/HelloWithProps.spec.ts" hostname="localhost" tests="2" failures="0" time="2.154" timestamp="2018-02-02T10:59:44">
-    <properties>
-    </properties>
-    <testcase classname="HelloWithProps.spec.js" name="renders without crashing" time="0">
-    </testcase>
-    <testcase classname="HelloWithProps.spec.js" name="should display Hello World" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" hostname="localhost" tests="2" failures="0" time="2.383" timestamp="2018-02-02T10:59:44">
+  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts" hostname="localhost" tests="2" failures="2" time="1.474" timestamp="2018-02-06T09:55:57">
     <properties>
     </properties>
     <testcase classname="Hello.spec.js" name="renders without crashing" time="0">
+      <failure message="TypeError: Cannot read property &apos;message&apos; of undefined
+    at Proxy.render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/src/components/Hello/index.vue:3093:43)
+    at VueComponent.Vue._render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:4472:22)
+    at VueComponent.updateComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2763:21)
+    at Watcher.get (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3113:25)
+    at new Watcher (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3102:12)
+    at mountComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2770:3)
+    at VueComponent.Object.&lt;anonymous&gt;.Vue$3.$mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:7893:10)
+    at mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/@vue/test-utils/dist/vue-test-utils.js:4618:8)
+    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:7:40)
+    at Object.asyncFn (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/jasmine_async.js:127:148)
+    at resolve (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:51:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:40:274)
+    at promise.then (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:83:39)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
+      </failure>
+      <failure message="TypeError: Cannot read property &apos;message&apos; of undefined
+    at Proxy.render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/src/components/Hello/index.vue:3093:43)
+    at VueComponent.Vue._render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:4472:22)
+    at VueComponent.updateComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2763:21)
+    at Watcher.get (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3113:25)
+    at new Watcher (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3102:12)
+    at mountComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2770:3)
+    at VueComponent.Object.&lt;anonymous&gt;.Vue$3.$mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:7893:10)
+    at mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/@vue/test-utils/dist/vue-test-utils.js:4618:8)
+    at shallow (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/@vue/test-utils/dist/vue-test-utils.js:4648:10)
+    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:14:46)
+    at Object.asyncFn (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/jasmine_async.js:129:432)
+    at resolve (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:51:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:40:274)
+    at promise.then (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:83:39)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
+      </failure>
     </testcase>
-    <testcase classname="Hello.spec.js" name="should display the content of .hello h1 = Now that is a cool Vue.JS with Typescript 2.7 boilerplate" time="0">
+    <testcase classname="Hello.spec.js" name="should fetch items for api call" time="0">
+      <failure message="TypeError: Cannot read property &apos;message&apos; of undefined
+    at Proxy.render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/src/components/Hello/index.vue:3093:43)
+    at VueComponent.Vue._render (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:4472:22)
+    at VueComponent.updateComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2763:21)
+    at Watcher.get (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3113:25)
+    at new Watcher (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:3102:12)
+    at mountComponent (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:2770:3)
+    at VueComponent.Object.&lt;anonymous&gt;.Vue$3.$mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:7893:10)
+    at mount (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/@vue/test-utils/dist/vue-test-utils.js:4618:8)
+    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:7:40)
+    at Object.asyncFn (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/jasmine_async.js:127:148)
+    at resolve (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:51:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:40:274)
+    at promise.then (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:83:39)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
+      </failure>
+      <failure message="TypeError: Cannot read property &apos;_init&apos; of undefined
+    at Hello (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/vue/dist/vue.runtime.common.js:4726:12)
+    at Object.&lt;anonymous&gt; (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/test/Hello.spec.ts:29:16)
+    at Object.asyncFn (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/jasmine_async.js:129:432)
+    at resolve (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:51:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:40:274)
+    at promise.then (/Users/jeremiezarca/Desktop/Enablon/vue-ts-boilerplate/node_modules/jest-jasmine2/build/queue_runner.js:83:39)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)" type="AssertionError">
+      </failure>
     </testcase>
     <system-out/>
     <system-err/>
