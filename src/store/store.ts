@@ -7,7 +7,7 @@ Vue.use(Vuex);
 
 const createStore = () => new Vuex.Store<State>({
     modules: {
-        hello,
+        hello: hello,
     },
 });
 
